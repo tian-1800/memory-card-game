@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/tian-1800/memory-card-game/static/css/main.9d5b29c0.chunk.css",
+    "main.js": "/tian-1800/memory-card-game/static/js/main.46020650.chunk.js",
+    "main.js.map": "/tian-1800/memory-card-game/static/js/main.46020650.chunk.js.map",
+    "runtime-main.js": "/tian-1800/memory-card-game/static/js/runtime-main.bc0686a1.js",
+    "runtime-main.js.map": "/tian-1800/memory-card-game/static/js/runtime-main.bc0686a1.js.map",
+    "static/js/2.cdedd296.chunk.js": "/tian-1800/memory-card-game/static/js/2.cdedd296.chunk.js",
+    "static/js/2.cdedd296.chunk.js.map": "/tian-1800/memory-card-game/static/js/2.cdedd296.chunk.js.map",
+    "static/js/3.f2ab1c06.chunk.js": "/tian-1800/memory-card-game/static/js/3.f2ab1c06.chunk.js",
+    "static/js/3.f2ab1c06.chunk.js.map": "/tian-1800/memory-card-game/static/js/3.f2ab1c06.chunk.js.map",
+    "index.html": "/tian-1800/memory-card-game/index.html",
+    "static/css/main.9d5b29c0.chunk.css.map": "/tian-1800/memory-card-game/static/css/main.9d5b29c0.chunk.css.map",
+    "static/js/2.cdedd296.chunk.js.LICENSE.txt": "/tian-1800/memory-card-game/static/js/2.cdedd296.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bc0686a1.js",
+    "static/js/2.cdedd296.chunk.js",
+    "static/css/main.9d5b29c0.chunk.css",
+    "static/js/main.46020650.chunk.js"
+  ]
+}
