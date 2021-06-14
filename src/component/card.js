@@ -1,5 +1,7 @@
 import React from "react";
 
+import "../style/card.css";
+
 const Card = (props) => {
     
   const handleClick = () => {

@@ -5,6 +5,7 @@ import "../style/card-grid.css";
 
 const CardGrid = (props) => {
   const [isClicked, setIsClicked] = useState([]);
+
   const handleClick = (index) => {
     if (!isClicked[index]) {
       let tempArr = [...isClicked];
@@ -16,6 +17,7 @@ const CardGrid = (props) => {
       setIsClicked([]);
     }
   };
+
   const cardJSXArray = props.data.map((card) => {
     return (
       <Card
@@ -25,7 +27,8 @@ const CardGrid = (props) => {
       />
     );
   });
-  let rndCardJSXArray = ((array) => {
+
+  const randomizedCardJSXArray = ((array) => {
     let tempArr = [...array];
     for (let i = tempArr.length - 1; i > 0; i -= 1) {
       const j = Math.floor(Math.random() * (i + 1));
@@ -34,7 +37,7 @@ const CardGrid = (props) => {
     return tempArr;
   })(cardJSXArray);
 
-  return <main id="card-grid">{rndCardJSXArray}</main>;
+  return <main id="card-grid">{randomizedCardJSXArray}</main>;
 };
 
 export default CardGrid;
