@@ -5,10 +5,11 @@ import "../style/card-grid.css";
 
 const CardGrid = (props) => {
   const [isClicked, setIsClicked] = useState([]);
+  const { data } = props;
 
   const handleClick = (index) => {
     if (!isClicked[index]) {
-      let tempArr = [...isClicked];
+      const tempArr = [...isClicked];
       tempArr[index] = true;
       setIsClicked(tempArr);
       props.userClick(true);
@@ -18,18 +19,16 @@ const CardGrid = (props) => {
     }
   };
 
-  const cardJSXArray = props.data.map((card) => {
-    return (
-      <Card
-        src={card}
-        handleClick={handleClick}
-        index={props.data.indexOf(card)}
-      />
-    );
-  });
+  const cardJSXArray = data.map((card) => (
+    <Card
+      src={card}
+      handleClick={handleClick}
+      index={props.data.indexOf(card)}
+    />
+  ));
 
   const randomizedCardJSXArray = ((array) => {
-    let tempArr = [...array];
+    const tempArr = [...array];
     for (let i = tempArr.length - 1; i > 0; i -= 1) {
       const j = Math.floor(Math.random() * (i + 1));
       [tempArr[i], tempArr[j]] = [tempArr[j], tempArr[i]];

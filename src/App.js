@@ -8,13 +8,13 @@ import importedImg from "./component/imgData";
 function App() {
   const [currentScore, setCurrentScore] = useState(0);
   const [highScore, setHighScore] = useState(0);
-  
-  let score = { current: currentScore, high: highScore };
+
+  const score = { current: currentScore, high: highScore };
   const handleClick = (user) => {
     if (user) {
       setCurrentScore(currentScore + 1);
     } else {
-      if (currentScore>highScore) setHighScore(currentScore);
+      if (currentScore > highScore) setHighScore(currentScore);
       setCurrentScore(0);
     }
   };

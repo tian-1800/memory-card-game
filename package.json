@@ -11,7 +11,7 @@
     "react-scripts": "4.0.3",
     "web-vitals": "^1.1.2"
   },
-  "homepage": "https://github.com/tian-1800/memory-card-game",
+  "homepage": "http://tian-1800.github.io/memory-card-game",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -39,6 +39,12 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^3.2.0"
+    "eslint": "^7.28.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.24.0",
+    "gh-pages": "^3.2.0",
+    "prettier": "2.3.1"
   }
 }
