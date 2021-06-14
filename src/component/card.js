@@ -1,16 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 
 const Card = (props) => {
     
-  const [clicked, setClicked] = useState(props.clicked);
   const handleClick = () => {
-    if (clicked) props.clickedAgain(props.src);
-    else setClicked(true);
+      props.handleClick(props.index);
   };
 
   return (
-    <div class="card-frame" onClick={handleClick}>
+    <div className="card-frame" onClick={handleClick}>
       <img src={props.src} alt="" />
+      <p>{props.index}</p>
     </div>
   );
 };
